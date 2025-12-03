@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalog-config
+  namespace: microservices
+data:
+  ENVIRONMENT: "Production"
+  FEATURE_ENABLE_LOGGING: "true"

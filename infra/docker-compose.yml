@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  catalog:
+    build:
+      context: ../services/catalog
+      dockerfile: Dockerfile
+    image: catalog-service:dev
+    container_name: catalog-service
+    ports:
+      - "5001:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
